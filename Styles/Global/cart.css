@@ -1,0 +1,171 @@
+/* ============= GLOBAL STYLES FOR CART OVERLAY ============= */
+
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+/* Cart OverLay Section */
+.cart-section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  z-index: -2;
+  opacity: 0;
+}
+
+.show-cart {
+  z-index: 100;
+  opacity: 1;
+}
+
+.cart {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  max-width: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: hsl(210, 36%, 96%);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1.5rem;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(100%);
+  padding-top: 3rem;
+  color: #102a42;
+  text-transform: capitalize;
+}
+
+.show-cart .cart {
+  transform: translateX(0);
+}
+
+.cart-close-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: transparent;
+  border: transparent;
+  color: hsl(210, 22%, 49%);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cart-header {
+  font-family: "Ephesis", cursive;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  justify-self: center;
+}
+
+/* Cart Items Container */
+.cart-items-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Single Cart Item */
+.single-cart-item {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+}
+
+.cart-item-img {
+  width: 100%;
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.cart-item-title {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.cart-item-price {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.remove-item-btn {
+  color: hsl(210, 22%, 49%);
+  text-transform: lowercase;
+  background-color: transparent;
+  border: transparent;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.cart-item-count-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.3rem;
+}
+
+.inc-btn,
+.dec-btn {
+  background-color: transparent;
+  border: transparent;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: hsl(21, 62%, 45%);
+  cursor: pointer;
+}
+
+.item-count {
+  font-weight: lighter;
+}
+/* End of Cart Items */
+
+/* Cart Price Section */
+.cart-price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  font-family: "Ephesis", cursive;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+}
+
+.checkout-btn {
+  background-color: hsl(21, 62%, 45%);
+  border: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 0.5rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.checkout-btn:hover {
+  background-color: hsl(21, 43%, 49%);
+  color: black;
+}
+/* End of Price Section */

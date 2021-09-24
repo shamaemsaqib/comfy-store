@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./Styles/Pages/products.css" />
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./Styles/Global/nav-sidebar.css" />
+    <link rel="stylesheet" href="./Styles/Global/cart.css" />
+    <link rel="stylesheet" href="./Styles/Global/nav-banner-black.css" />
+
+    <!-- Font Awesome Icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/e21c398f26.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End of CSS Files  -->
+
+    <title>Products - Comfy</title>
+  </head>
+  <body>
+    <!-- PreLoader for the Products to be fetched -->
+    <div class="preloader">
+      <h1>loading....</h1>
+    </div>
+    <!-- End of PreLoader -->
+
+    <div class="main">
+      <!-- NavBar -->
+      <nav class="nav-container">
+        <!-- Navbar Links for Bigger Screens -->
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <a href="./index.html" class="single-nav-link">home</a>
+            <a href="./products.html" class="single-nav-link">products</a>
+            <a href="./about.html" class="single-nav-link">about</a>
+          </ul>
+        </div>
+
+        <!-- Navbar Toggle Button for Smaller Screens  -->
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <div class="nav-logo">
+          <img src="./images/logo-black.svg" alt="logo" />
+        </div>
+
+        <!-- Cart Button -->
+        <div class="cart-container">
+          <p class="cart-length">0</p>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </nav>
+      <!-- End of NavBar -->
+
+      <!-- Banner -->
+      <header class="banner">
+        <h1 class="banner-title">home / products</h1>
+      </header>
+      <!-- End of Banner -->
+
+      <!-- Main Section for Filters and Products -->
+      <article class="hero-section">
+        <!-- Filters Sections -->
+        <div class="section-sticky">
+          <section class="filters-container">
+            <!-- Filter by Name -->
+            <input
+              type="text"
+              name="product-company"
+              id="search-input"
+              placeholder="search..."
+            />
+
+            <!-- Filter by Company -->
+            <section class="company-name-container filter-section">
+              <h4 class="section-header">company</h4>
+
+              <!-- Company Names -->
+              <ul class="company-list">
+                <li class="single-company-name">
+                  <button class="single-company-name">all</button>
+                </li>
+                <li class="single-company-name">
+                  <button class="single-company-name">ikea</button>
+                </li>
+                <li class="single-company-name">
+                  <button class="single-company-name">marcos</button>
+                </li>
+                <li class="single-company-name">
+                  <button class="single-company-name">caressa</button>
+                </li>
+                <li class="single-company-name">
+                  <button class="single-company-name">liddy</button>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Filter By Price -->
+            <section class="price-container filter-section">
+              <h4 class="section-header">price</h4>
+              <input
+                type="range"
+                name="range-input"
+                id="range-input"
+                min="0"
+                max="80"
+                value="80"
+              />
+              <h4 class="price">
+                value : $<span class="range-value">80</span>
+              </h4>
+            </section>
+          </section>
+        </div>
+        <!-- End of Filters Section -->
+
+        <!-- Products Container -->
+        <section class="products-container">
+          <!-- Demo Single Product -->
+          <!-- <article class="single-product">
+            <img src="./images/6d92321b.jpeg" alt="" class="product-image" />
+            <h3 class="product-title">High-Back Bench</h3>
+            <h5 class="product-price">$9.99</h5>
+            <div class="product-options">
+              <a href="./single-product.html" class="product-link">
+                <button class="product-details">
+                  <i class="fas fa-search"></i>
+                </button>
+              </a>
+              <button class="product-addtocart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </article> -->
+          <!-- End of  Demo Single Product -->
+        </section>
+        <!-- End of Product Container -->
+      </article>
+      <!-- End of Main Section -->
+    </div>
+
+    <!-- Nav SideBar for Smaller Screens -->
+    <section class="nav-sidebar-container">
+      <div class="sidebar">
+        <button class="icon close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Nav Links -->
+        <ul class="sidebar-nav-links">
+          <li>
+            <a href="./index.html" class="single-side-link">
+              <i class="icon fas fa-home fa-fw"></i> home
+            </a>
+          </li>
+          <li>
+            <a href="./products.html" class="single-side-link">
+              <i class="icon fas fa-couch fa-fw"></i> products
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="single-side-link">
+              <i class="icon fas fa-book fa-fw"></i> about
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End of Nav SideBar -->
+
+    <!-- Cart Overlay -->
+    <div class="cart-section">
+      <section class="cart">
+        <button class="cart-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h1 class="cart-header">your bag</h1>
+
+        <!-- Cart Items -->
+        <div class="cart-items-container">
+          <!-- Demo Single Cart Item -->
+          <!-- <article class="single-cart-item">
+            <img src="./images/6d92321b.jpeg" alt="" class="cart-item-img" />
+            <div class="cart-item-info">
+              <h3 class="cart-item-title">Utopia Sofa</h3>
+              <h4 class="cart-item-price">$39.95</h4>
+              <button class="remove-item-btn">remove</button>
+            </div>
+            <div class="cart-item-count-container">
+              <button class="inc-btn">
+                <i class="fas fa-angle-up"></i>
+              </button>
+              <h4 class="item-count">0</h4>
+              <button class="dec-btn">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
+          </article> -->
+          <!-- End of Demo Single Cart Item -->
+        </div>
+        <!-- End of Cart Items -->
+
+        <!-- Cart Total Price -->
+        <div class="cart-price-container">
+          <h1 class="cart-price">
+            total : $<span class="total-price">0.00</span>
+          </h1>
+          <button class="checkout-btn">checkout</button>
+        </div>
+      </section>
+    </div>
+    <!-- End of Cart Overlay -->
+
+    <!-- Scripts -->
+    <!-- Global Scripts -->
+    <script type="module" src="./Scripts/Global/Cart/toggleCart.js"></script>
+    <script src="./Scripts/Global/toggle-navbar.js"></script>
+
+    <!-- Main Script -->
+    <script type="module" src="./Scripts/Pages/Products/products.js"></script>
+    <!-- End of Scripts -->
+  </body>
+</html>

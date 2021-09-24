@@ -1,0 +1,153 @@
+/* Preloader */
+.preloader {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: hsl(210, 36%, 96%);
+}
+
+.hide-preloader {
+  display: none;
+}
+
+.preloader h1 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: hsl(209, 23%, 25%);
+}
+
+@media screen and (max-width: 600px) {
+  .preloader h1 {
+    font-size: 2.5rem;
+  }
+}
+/* End of PreLoader */
+
+/* Main Content(Used for PreLoader) */
+.main {
+  display: none;
+}
+
+.show-main {
+  display: block;
+}
+
+.hero-section {
+  padding: 3rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Product Info Container */
+.single-product-container {
+  display: grid;
+  row-gap: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .single-product-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.product-image {
+  height: 28rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.product-title {
+  color: #22374b;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.product-company {
+  color: hsl(210, 22%, 49%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: cursive;
+}
+
+.product-price {
+  color: #31404e;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+.product-text {
+  margin-top: 2rem;
+  color: hsl(210, 22%, 49%);
+  width: 70%;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.addtocart-btn {
+  background-color: hsl(21, 62%, 45%);
+  border: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s linear;
+}
+
+.addtocart-btn:hover {
+  background-color: hsl(21, 43%, 49%);
+  color: black;
+}
+
+@media screen and (max-width: 400px) {
+  .product-image {
+    height: 22rem;
+  }
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .product-text {
+    margin-top: 2rem;
+    color: hsl(210, 22%, 49%);
+    width: 90%;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .addtocart-btn {
+    background-color: hsl(21, 62%, 45%);
+    border: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem 1.3rem;
+    border-radius: 0.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s linear;
+  }
+
+  .addtocart-btn:hover {
+    background-color: hsl(21, 43%, 49%);
+    color: black;
+  }
+}
+/* End of Product Info */

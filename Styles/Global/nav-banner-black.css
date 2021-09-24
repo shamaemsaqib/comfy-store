@@ -1,0 +1,156 @@
+/* ============= GLOBAL STYLES FOR NAVBAR AND BANNER (WHITE) ============= */
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+/* End of Global */
+
+/* Navbar */
+.nav-container {
+  width: 95%;
+  margin: 0 auto;
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.nav-links-container {
+  height: 0;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.single-nav-link {
+  text-decoration: none;
+  color: #102a42;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  transition: all 0.2s linear;
+}
+
+.single-nav-link:hover {
+  color: hsl(21, 62%, 45%);
+}
+
+.nav-toggle {
+  background-color: hsl(21, 62%, 45%);
+  color: #fff;
+  border: transparent;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 1rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  background-color: hsl(21, 64%, 23%);
+}
+
+.cart-container {
+  position: relative;
+  justify-self: flex-end;
+  margin-right: 2rem;
+}
+
+.cart-length {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  z-index: 1;
+  background-color: hsl(21, 62%, 45%);
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 45%;
+}
+
+.cart-btn {
+  color: #102a42;
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .nav-toggle {
+    font-size: 1.2rem;
+  }
+
+  .cart-container {
+    margin-right: 1rem;
+  }
+
+  .cart-length {
+    top: -0.5rem;
+    right: -0rem;
+    font-size: 0.8rem;
+  }
+
+  .cart-btn {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-links-container {
+    height: auto !important;
+    display: inline-block;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+/* End of Navbar */
+
+/* Banner */
+.banner {
+  width: 100%;
+  background-color: hsl(210, 36%, 96%);
+  height: 6rem;
+  display: grid;
+  place-items: center;
+  justify-content: start;
+  padding-left: 5rem;
+}
+
+.banner-title {
+  color: hsl(210, 22%, 49%);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 5rem;
+    padding-left: 2rem;
+  }
+
+  .banner-title {
+    font-size: 1.3rem;
+  }
+}
+/* End of Banner */

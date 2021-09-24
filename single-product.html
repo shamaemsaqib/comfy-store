@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./Styles/Pages/single-product.css" />
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./Styles/Global/nav-sidebar.css" />
+    <link rel="stylesheet" href="./Styles/Global/cart.css" />
+    <link rel="stylesheet" href="./Styles/Global/nav-banner-black.css" />
+
+    <!-- Font Awesome Icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/e21c398f26.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End of CSS Files  -->
+
+    <title>High-Back Bench - Comfy</title>
+  </head>
+  <body>
+    <!-- PreLoader for the Product Info to be fetched -->
+    <div class="preloader">
+      <h1>loading....</h1>
+    </div>
+    <!-- End of PreLoader -->
+
+    <div class="main">
+      <!-- NavBar -->
+      <nav class="nav-container">
+        <!-- Navbar Links for Bigger Screens -->
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <a href="./index.html" class="single-nav-link">home</a>
+            <a href="./products.html" class="single-nav-link">products</a>
+            <a href="./about.html" class="single-nav-link">about</a>
+          </ul>
+        </div>
+
+        <!-- Navbar Toggle Button for Smaller Screens  -->
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <div class="nav-logo">
+          <img src="./images/logo-black.svg" alt="logo" />
+        </div>
+
+        <!-- Cart Button -->
+        <div class="cart-container">
+          <p class="cart-length">0</p>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </nav>
+      <!-- End of NavBar -->
+
+      <!-- Banner -->
+      <header class="banner">
+        <h1 class="banner-title">
+          product / <span class="banner-product-name">High-Back Bench</span>
+        </h1>
+      </header>
+      <!-- End of Banner -->
+
+      <!-- Main Section for Product Information -->
+      <article class="hero-section">
+        <section class="single-product-container" data-productid="0">
+          <!-- Demo Product Information -->
+          <!-- <div class="product-img-container">
+            <img src="./images/6d92321b.jpeg" alt="" class="product-image" />
+          </div>
+          <div class="product-info">
+            <h1 class="product-title">High-Back Bench</h1>
+            <h3 class="product-company">by ikea</h3>
+            <h5 class="product-price">$9.99</h5>
+            <p class="product-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+              cumque sunt optio, eligendi unde dolore placeat libero corrupti
+              quidem quos at voluptas sed rerum hic excepturi blanditiis!
+              Laborum nulla obcaecati est officia in natus, iusto vitae harum,
+              nobis, molestias dicta.
+            </p>
+            <button class="addtocart-btn">add to cart</button>
+          </div> -->
+          <!-- End of Demo Product Information -->
+        </section>
+      </article>
+    </div>
+    <!-- End of Main Section -->
+
+    <!-- Nav SideBar for Smaller Screens -->
+    <section class="nav-sidebar-container">
+      <div class="sidebar">
+        <button class="icon close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Nav Links -->
+        <ul class="sidebar-nav-links">
+          <li>
+            <a href="./index.html" class="single-side-link">
+              <i class="icon fas fa-home fa-fw"></i> home
+            </a>
+          </li>
+          <li>
+            <a href="./products.html" class="single-side-link">
+              <i class="icon fas fa-couch fa-fw"></i> products
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="single-side-link">
+              <i class="icon fas fa-book fa-fw"></i> about
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End of Nav SideBar -->
+
+    <!-- Cart Overlay -->
+    <div class="cart-section">
+      <section class="cart">
+        <button class="cart-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h1 class="cart-header">your bag</h1>
+
+        <!-- Cart Items -->
+        <div class="cart-items-container">
+          <!-- Demo Single Cart Item -->
+          <!-- <article class="single-cart-item">
+            <img src="./images/6d92321b.jpeg" alt="" class="cart-item-img" />
+            <div class="cart-item-info">
+              <h3 class="cart-item-title">Utopia Sofa</h3>
+              <h4 class="cart-item-price">$39.95</h4>
+              <button class="remove-item-btn">remove</button>
+            </div>
+            <div class="cart-item-count-container">
+              <button class="inc-btn">
+                <i class="fas fa-angle-up"></i>
+              </button>
+              <h4 class="item-count">0</h4>
+              <button class="dec-btn">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
+          </article> -->
+          <!-- End of Demo Single Cart Item -->
+        </div>
+        <!-- End of Cart Items -->
+
+        <!-- Cart Total Price -->
+        <div class="cart-price-container">
+          <h1 class="cart-price">
+            total : $<span class="total-price">0.00</span>
+          </h1>
+          <button class="checkout-btn">checkout</button>
+        </div>
+      </section>
+    </div>
+    <!-- End of Cart Overlay -->
+
+    <!-- Scripts -->
+    <!-- Global Scripts -->
+    <script type="module" src="./Scripts/Global/Cart/toggleCart.js"></script>
+    <script src="./Scripts/Global/toggle-navbar.js"></script>
+
+    <!-- Main Script -->
+    <script
+      type="module"
+      src="./Scripts/Pages/Single Product/single-product.js"
+    ></script>
+    <!-- End of Scripts -->
+  </body>
+</html>

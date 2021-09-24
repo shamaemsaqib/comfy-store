@@ -1,0 +1,54 @@
+/* Banner */
+
+.about-container {
+  width: 80%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #102a42;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.slash {
+  color: hsl(21, 62%, 45%);
+}
+
+.about-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2rem;
+  color: #868686;
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .about-text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    width: 95%;
+    margin: 3rem auto;
+  }
+
+  .about-text {
+    width: 85%;
+  }
+}
+
+/* End of Banner */

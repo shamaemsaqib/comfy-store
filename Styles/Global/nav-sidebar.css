@@ -1,0 +1,86 @@
+/* ============= GLOBAL STYLES FOR NAV SIDEBAR ============= */
+
+/* Nav SideBar Container*/
+.nav-sidebar-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 3rem;
+  z-index: 1;
+  display: none;
+}
+
+.show-sidebar {
+  display: block;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 4rem 3rem;
+  position: relative;
+}
+
+.icon {
+  color: hsl(210, 22%, 49%);
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Nav Links Container */
+.sidebar-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-nav-links li {
+  list-style-type: none;
+}
+
+.single-side-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: hsl(209, 23%, 25%);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .nav-sidebar-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .sidebar {
+    padding: 5rem 2rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .close-btn {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .single-side-link {
+    font-size: 1.3rem;
+  }
+}
+/* End of Nav Sidebar */
